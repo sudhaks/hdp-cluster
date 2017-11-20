@@ -11,7 +11,8 @@ Steps:
 5. Bring up masternode, datanode:
     docker-compose -f compose/multinode.yml up
     
-6. Deploy services (HDFS, YARN, Hive Spark) manually or via blueprint
+6. Deploy services (HDFS, YARN, Hive Spark) manually or via blueprint:
+    sh submit-blueprint.sh multinode blueprints/multinode.json
 
 7. Cluster is ready for test, connect to nodes for testing
     #find containers
